@@ -1,24 +1,14 @@
-# Lumen PHP Framework
+## Clavatar - A Clone Of Gravatar
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+Clavatar is for learning purposes. The Image service does the following:
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Return a default image of sixe (100 x 100) if the hash is not valid or if the user does not have any avatar attached to that email address.
+- Allow you to request for any size of the image by attaching a size parameter like so **s=400** or **size=400** to the URL.
+- Allow you to return a cartoonized version of an image by attaching **d=cp** to the URL
+- Allow you to request for the black and white version of the image by attaching a **d=bw** to the URL.
+- Allow you to request for an artistic version of the image by attaching a **d=hk** to the URL.
+- Allow you to request for the compressed and optimized version of the image by attaching a **q=auto** to the URL.
+- Allow you to request for the best format of the image  by attaching a **f=auto** to the URL. This will ensure that whatever browser is delivering the image gets the best format.
+- Allow you to request for the rounded corners version of the image (just as we have in every platform’s thumbnail profile image) by attaching a **rc=y** to the URL.
+- Allow you to rotate the image by attaching a **r=40** to the URL. 40 refers to the angle. It can be any value between 1 and 100.
+- Allow you to request for a color-bordered version of the image by attaching a **b=red** to the URL. red refers to the color. Any color can be specified here.
